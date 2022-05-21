@@ -1,8 +1,17 @@
-## Variadic tuple types in Typescript
+---
+title: 'Variadic tuple types in Typescript'
+date: 2022-05-20
+tags:
+  - typescript
+question: 'What are variadic tuple types in Typescript?'
+answer: 'The possibility of spreading out a tuple type thus retaining types of tuples in functions without specifying the types of possible tuples with A THOUSAND overloads. '
+---
+
+## {title}
 
 This is possible to do since Typescript 4.x.
 
-```
+```typescript
 const concat<T extends any[], B extends any[]>(first: [...T], second: [...B]):[...T, ...B] => {
     return[...first,...second];
 }
