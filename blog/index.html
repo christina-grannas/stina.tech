@@ -5,25 +5,32 @@
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/start-4e90a2e1.js">
-	<link rel="modulepreload" href="/_app/chunks/index-c3650d4a.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-8187eef2.js">
-	<link rel="modulepreload" href="/_app/pages/blog/index.svelte-7a2acf26.js">
+	<link rel="stylesheet" href="/_app/assets/pages/blog/index.svelte-85c47002.css">
+	<link rel="modulepreload" href="/_app/start-e4112767.js">
+	<link rel="modulepreload" href="/_app/chunks/index-396b3103.js">
+	<link rel="modulepreload" href="/_app/layout.svelte-00d57040.js">
+	<link rel="modulepreload" href="/_app/pages/blog/index.svelte-64eb108c.js">
 	</head>
 	<body>
 		<div>
-<h1>Welcome to my blawg</h1>
-<ul><li>Make blog in SvelteKit + md files</li>
-    <li>Put in github repo</li>
-    <li>Build it somehow</li>
-    <li>Host on github pages</li>
-    <li>Images?</li>
-    <li>Art part?</li></ul>
 
-		<script type="module" data-sveltekit-hydrate="57ofok">
-		import { start } from "/_app/start-4e90a2e1.js";
+
+
+<h1>Welcome to my blawg</h1>
+<ul><li><a href="/blog/../blog/generating-static-html-with-sveltekit">Generating static html with SvelteKit</a> - 2022-05-21</li><li><a href="/blog/../blog/variadic-tuple-types-in-typescript">Variadic tuple types in Typescript</a> - 2022-05-20</li><li><a href="/blog/../blog/azure-diagram-template-in-figjam">Azure diagram template in FigJam</a> - 2022-05-19</li></ul>
+<ul><li class="done svelte-1i3avza">Make blog in SvelteKit + md files</li>
+	<li class="done svelte-1i3avza">Put in github repo</li>
+	<li class="done svelte-1i3avza">Build it somehow</li>
+	<li class="done svelte-1i3avza">Host on github pages</li>
+	<li>Images?</li>
+	<li class="done svelte-1i3avza">Frontmatter</li>
+	<li class="done svelte-1i3avza">Listings</li>
+	<li>Art part?</li></ul>
+
+		<script type="module" data-sveltekit-hydrate="1xsoqni">
+		import { start } from "/_app/start-e4112767.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="57ofok"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1xsoqni"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -33,13 +40,13 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/_app/layout.svelte-8187eef2.js"),
-						import("/_app/pages/blog/index.svelte-7a2acf26.js")
+					import("/_app/layout.svelte-00d57040.js"),
+						import("/_app/pages/blog/index.svelte-64eb108c.js")
 				],
 				params: {},
 				routeId: "blog"
 			}
 		});
-	</script></div>
+	</script><script type="application/json" sveltekit:data-type="data" sveltekit:data-url="/posts.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"slug\":\"/blog/../blog/generating-static-html-with-sveltekit\",\"title\":\"Generating static html with SvelteKit\",\"date\":\"2022-05-21T00:00:00.000Z\",\"tags\":[\"svelte\"],\"html\":\"\u003Ch2>Generating static html with SvelteKit\u003C/h2>\\n\u003Cp>You can get SvelteKit to generate static html by using an adapter: \u003Ccode>@sveltejs/adapter-static\u003C/code>. I used this to be able to deploy my blog to Github Pages.\u003C/p>\\n\u003Cp>\u003Ca href=\\\"https://kit.svelte.dev/docs/adapters#supported-environments-static-sites\\\" rel=\\\"nofollow\\\">SvelteKit:Adapters - Static Sites\u003C/a>\u003C/p>\",\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\"},{\"slug\":\"/blog/../blog/variadic-tuple-types-in-typescript\",\"title\":\"Variadic tuple types in Typescript\",\"date\":\"2022-05-20T00:00:00.000Z\",\"tags\":[\"typescript\"],\"html\":\"\u003Ch2>Variadic tuple types in Typescript\u003C/h2>\\n\u003Cp>This is possible to do since Typescript 4.x.\u003C/p>\\n\u003Cpre class=\\\"language-typescript\\\">\u003C!-- HTML_TAG_START -->\u003Ccode class=\\\"language-typescript\\\">\u003Cspan class=\\\"token keyword\\\">const\u003C/span> \u003Cspan class=\\\"token generic-function\\\">\u003Cspan class=\\\"token function\\\">concat\u003C/span>\u003Cspan class=\\\"token generic class-name\\\">\u003Cspan class=\\\"token operator\\\">&lt;\u003C/span>\u003Cspan class=\\\"token constant\\\">T\u003C/span> \u003Cspan class=\\\"token keyword\\\">extends\u003C/span> \u003Cspan class=\\\"token builtin\\\">any\u003C/span>\u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token constant\\\">B\u003C/span> \u003Cspan class=\\\"token keyword\\\">extends\u003C/span> \u003Cspan class=\\\"token builtin\\\">any\u003C/span>\u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token operator\\\">>\u003C/span>\u003C/span>\u003C/span>\u003Cspan class=\\\"token punctuation\\\">(\u003C/span>first\u003Cspan class=\\\"token operator\\\">:\u003C/span> \u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token operator\\\">...\u003C/span>\u003Cspan class=\\\"token constant\\\">T\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> second\u003Cspan class=\\\"token operator\\\">:\u003C/span> \u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token operator\\\">...\u003C/span>\u003Cspan class=\\\"token constant\\\">B\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">)\u003C/span>\u003Cspan class=\\\"token operator\\\">:\u003C/span>\u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token operator\\\">...\u003C/span>\u003Cspan class=\\\"token constant\\\">T\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token operator\\\">...\u003C/span>\u003Cspan class=\\\"token constant\\\">B\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span> \u003Cspan class=\\\"token operator\\\">=>\u003C/span> \u003Cspan class=\\\"token punctuation\\\">&#123;\u003C/span>\\n    \u003Cspan class=\\\"token keyword\\\">return\u003C/span>\u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token operator\\\">...\u003C/span>first\u003Cspan class=\\\"token punctuation\\\">,\u003C/span>\u003Cspan class=\\\"token operator\\\">...\u003C/span>second\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">;\u003C/span>\\n\u003Cspan class=\\\"token punctuation\\\">&#125;\u003C/span>\\n\\n\u003Cspan class=\\\"token keyword\\\">const\u003C/span> res \u003Cspan class=\\\"token operator\\\">=\u003C/span>  \u003Cspan class=\\\"token function\\\">concat\u003C/span>\u003Cspan class=\\\"token punctuation\\\">(\u003C/span>\u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token string\\\">\\\"test\\\"\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token string\\\">\\\"hej\\\"\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token string\\\">\\\"test\\\"\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token punctuation\\\">[\u003C/span>\u003Cspan class=\\\"token number\\\">1\u003C/span>\u003Cspan class=\\\"token punctuation\\\">,\u003C/span> \u003Cspan class=\\\"token number\\\">2\u003C/span>\u003Cspan class=\\\"token punctuation\\\">]\u003C/span>\u003Cspan class=\\\"token punctuation\\\">)\u003C/span>\u003Cspan class=\\\"token punctuation\\\">;\u003C/span>\u003C/code>\u003C!-- HTML_TAG_END -->\u003C/pre>\\n\u003Cp>The trick here lies in spreading the tuple type inside brackets: \u003Ccode>[...T]\u003C/code> and make \u003Ccode>T\u003C/code> extend \u003Ccode>any[]\u003C/code> (array). Typescript will then be able to infer the typing inside the arrays/tuples you pass to \u003Ccode>contact()\u003C/code>.\u003C/p>\\n\u003Cp>\u003Ca href=\\\"https://www.typescriptlang.org/play?#code/MYewdgzgLgBKbAIawLwB4AqMCmAPK2YAJhDImAJ4DaAugDQwBCO+hJZltAfDDABQAzAJYAnaAC4YVAHSyM9GBGzwikmbMY0AlOPXSMDWdM0wUPAN4AoXiOxQAriLBSjwsVEOylKmgG5LAL6WlvDQMLakKLzwSFB8VABEBNAJDAkAFtgAVqkwSdgpClQAjAwATNq+QA\\\" rel=\\\"nofollow\\\">See example on typescriptlang.org\u003C/a>\u003C/p>\\n\u003Cp>If I have understand \u003Ca href=\\\"https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html\\\" rel=\\\"nofollow\\\">the docs\u003C/a> correctly.\u003C/p>\",\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\"},{\"slug\":\"/blog/../blog/azure-diagram-template-in-figjam\",\"title\":\"Azure diagram template in FigJam\",\"date\":\"2022-05-19T00:00:00.000Z\",\"tags\":[\"azure\",\"figma\"],\"html\":\"\u003Ch2>Azure diagram template in FigJam\u003C/h2>\\n\u003Cp>FigJam has a template for designing Microsoft Azure Diagrams! There are also templates for Google Cloud and AWS.\u003C/p>\\n\u003Cimg src=\\\"figjam.png\\\">\",\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\"}]"}</script></div>
 	</body>
 </html>
