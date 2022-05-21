@@ -36,8 +36,12 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined
-		  })
+			fallback: null
+		  }),
+		  prerender: {
+			  default: true
+		  },
+		  trailingSlash: 'always'
 	}
 };
 
