@@ -1,14 +1,14 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ede94b97.js",
+    "file": "start-39e5cb18.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-396b3103.js",
+      "_index-e9030ae9.js",
       "_paths-396f020f.js"
     ],
     "dynamicImports": [
-      ".svelte-kit/runtime/components/layout.svelte",
+      "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/blog/azure-diagram-template-in-figjam.md",
       "src/routes/blog/generating-static-html-with-sveltekit.md",
@@ -17,75 +17,73 @@
       "src/routes/index.svelte"
     ]
   },
-  ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "layout.svelte-00d57040.js",
-    "src": ".svelte-kit/runtime/components/layout.svelte",
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-ff5a5afc.js",
+    "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js",
+      "_paths-396f020f.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-736c5533.js",
+    "file": "error.svelte-300b14ea.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js"
     ]
   },
   "src/routes/blog/azure-diagram-template-in-figjam.md": {
-    "file": "pages/blog/azure-diagram-template-in-figjam.md-08a5c37e.js",
+    "file": "pages/blog/azure-diagram-template-in-figjam.md-96da85fc.js",
     "src": "src/routes/blog/azure-diagram-template-in-figjam.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js"
     ]
   },
   "src/routes/blog/generating-static-html-with-sveltekit.md": {
-    "file": "pages/blog/generating-static-html-with-sveltekit.md-fc83786a.js",
+    "file": "pages/blog/generating-static-html-with-sveltekit.md-e4159c30.js",
     "src": "src/routes/blog/generating-static-html-with-sveltekit.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-78c76bbf.js",
+    "file": "pages/blog/index.svelte-700a7681.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js",
+      "_index-e9030ae9.js",
       "_paths-396f020f.js"
-    ],
-    "css": [
-      "assets/pages/blog/index.svelte-85c47002.css"
     ]
   },
   "src/routes/blog/variadic-tuple-types-in-typescript.md": {
-    "file": "pages/blog/variadic-tuple-types-in-typescript.md-958b565f.js",
+    "file": "pages/blog/variadic-tuple-types-in-typescript.md-81947bf6.js",
     "src": "src/routes/blog/variadic-tuple-types-in-typescript.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-33068331.js",
+    "file": "pages/index.svelte-e91b34d6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-396b3103.js"
+      "_index-e9030ae9.js"
     ]
   },
-  "_index-396b3103.js": {
-    "file": "chunks/index-396b3103.js"
+  "_index-e9030ae9.js": {
+    "file": "chunks/index-e9030ae9.js"
   },
   "_paths-396f020f.js": {
     "file": "chunks/paths-396f020f.js"
