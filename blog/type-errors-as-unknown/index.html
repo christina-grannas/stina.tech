@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/stina.tech/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/stina.tech/_app/start-38999c3f.js">
+	<link rel="modulepreload" href="/stina.tech/_app/chunks/index-e9030ae9.js">
+	<link rel="modulepreload" href="/stina.tech/_app/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/stina.tech/_app/pages/__layout.svelte-ff5a5afc.js">
+	<link rel="modulepreload" href="/stina.tech/_app/pages/blog/type-errors-as-unknown.md-011d4cb1.js">
+	</head>
+	<body>
+		<div>
+<nav><li><a href="/stina.tech">Stina</a></li>
+	<li><a href="/stina.tech/blog">Learnt</a></li>
+	<li>Built</li></nav>
+<h2>Type errors as unknown in catch blocks</h2>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
+	<span class="token property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token property">"useUnknownInCatchVariables"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>This setting in <code>tsconfig.json</code> will make the type of the caught error in a <code>catch</code> block of type <code>unknown</code> instead of <code>any</code>.</p>
+
+		<script type="module" data-sveltekit-hydrate="1j97t8q">
+		import { start } from "/stina.tech/_app/start-38999c3f.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1j97t8q"]').parentNode,
+			paths: {"base":"/stina.tech","assets":"/stina.tech"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "always",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/stina.tech/_app/pages/__layout.svelte-ff5a5afc.js"),
+						import("/stina.tech/_app/pages/blog/type-errors-as-unknown.md-011d4cb1.js")
+				],
+				params: {},
+				routeId: "blog/type-errors-as-unknown"
+			}
+		});
+	</script></div>
+	</body>
+</html>
