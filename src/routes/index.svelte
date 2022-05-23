@@ -1,6 +1,4 @@
-<script>
-	const hej = 'HE';
-</script>
-
-<h1>Welcome to STIN</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main>
+	<h1>I'm Stina</h1>
+	<p>I learn things and I build things. Not always in that order.</p>
+</main>

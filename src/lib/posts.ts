@@ -1,4 +1,4 @@
-import type { Post } from '../routes/posts.json';
+import type { Post } from '../routes/blog/index.json';
 
 // Import the markdown files for each post
 const imports = import.meta.globEager('../routes/blog/*.md');

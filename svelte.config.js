@@ -2,6 +2,8 @@ import preprocess from 'svelte-preprocess';
 import {mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 
+const env = process.env.ENV;
+
 const extensions = ['.svelte', '.md'];
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -41,7 +43,12 @@ const config = {
 		  prerender: {
 			  default: true
 		  },
-		  trailingSlash: 'always'
+		  trailingSlash: 'always',
+
+		// Comment the paths if wants to run in dev mode.
+		paths: {
+			base: '/stina.tech'
+		},
 	}
 };
 

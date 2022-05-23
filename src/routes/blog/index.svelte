@@ -2,9 +2,10 @@
 and fetch this data before page actually loads -->
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
-	import type { Post } from '../posts.json';
+	import type { Post } from './index.json';
+	import { base } from '$app/paths';
 	export const load: Load = async ({ fetch }) => {
-		const url = '/posts.json';
+		const url = `${base}/blog.json`;
 		const res = await fetch(url);
 
 		return {
@@ -19,26 +20,16 @@ and fetch this data before page actually loads -->
 	export let posts: Post[];
 </script>
 
-<h1>Welcome to my blawg</h1>
+<main>
+	<h1>Things I've learnt</h1>
 
-<ul>
-	{#each posts as post}
-		<li><a href={post.slug}>{post.title}</a> - {new Date(post.date).toISOString().slice(0, 10)}</li>
-	{/each}
-</ul>
-<ul>
-	<li class="done">Make blog in SvelteKit + md files</li>
-	<li class="done">Put in github repo</li>
-	<li class="done">Build it somehow</li>
-	<li class="done">Host on github pages</li>
-	<li>Images?</li>
-	<li class="done">Frontmatter</li>
-	<li class="done">Listings</li>
-	<li>Art part?</li>
-</ul>
-
-<style>
-	.done {
-		text-decoration: line-through;
-	}
-</style>
+	<ul>
+		{#each posts as post}
+			<li>
+				<a href="{base}{post.slug}">{post.title}</a> - {new Date(post.date)
+					.toISOString()
+					.slice(0, 10)}
+			</li>
+		{/each}
+	</ul>
+</main>

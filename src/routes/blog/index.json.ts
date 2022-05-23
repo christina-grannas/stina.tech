@@ -1,4 +1,4 @@
-import posts from '../lib/posts';
+import posts from '../../lib/posts';
 export type Post = {
 	slug: string;
 	title: string;
